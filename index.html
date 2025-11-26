@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formation Mobile Mbemnova</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="/css/style.css">
 </head>
 
@@ -15,12 +16,23 @@
             <div class="logo">
                 <img src="/assets/img/MbemNovaSansFonde.png" alt="yo">
             </div>
-            <ul class="nav-links">
-                <li><a href="#formation">Formation</a></li>
-                <li><a href="#programme">Programme</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <a href="https://wa.me/237697847396" class="btn-primary"> 💬 Je m'inscris</a>
+            
+            <!-- Bouton Hamburger (visible sur mobile uniquement) -->
+            <button class="hamburger" id="hamburger" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+            <!-- Menu Navigation -->
+            <div class="nav-menu" id="navMenu">
+                <ul class="nav-links">
+                    <li><a href="#formation" class="nav-link">Formation</a></li>
+                    <li><a href="#programme" class="nav-link">Programme</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <a href="https://wa.me/237697847396" class="btn-primary"><i class="fa-brands fa-whatsapp"></i> Je m'inscris</a>
+            </div>
         </nav>
     </header>
 
@@ -34,8 +46,8 @@
                 </h1>
 
                 <div class="tech-tags">
-                    <span class="tech-tag">✨ Immense 100% Pratique</span>
-                    <span class="tech-tag">🚀 Competence Pro</span>
+                    <span class="tech-tag"><i class="fa-solid fa-star"></i> Immense 100% Pratique</span>
+                    <span class="tech-tag"><i class="fa-solid fa-rocket"></i> Competence Pro</span>
                 </div>
             </div>
             <div class="hero-stats">
@@ -50,8 +62,8 @@
             </div>
 
             <div class="hero-buttons">
-                <a href="https://wa.me/237697847396" class="btn-primary">💬 S'inscrire maintenant</a>
-                <a href="https://wa.me/237697847396" class="btn-secondary">📞 Nous contacter</a>
+                <a href="https://wa.me/237697847396" class="btn-primary"><i class="fa-brands fa-whatsapp"></i> S'inscrire maintenant</a>
+                <a href="https://wa.me/237697847396" class="btn-secondary"><i class="fa-solid fa-phone"></i> Nous contacter</a>
             </div>
             <div class="hero-image">
                 <div class="image-container">
@@ -71,7 +83,6 @@
             <!-- Module 1 -->
             <div class="module-card">
                 <div class="module-image">
-                    <!-- Mettez votre SVG ici -->
                     <img src="/assets/img/img2.svg" alt="Module Flutter">
                 </div>
                 <div class="module-content">
@@ -81,20 +92,20 @@
 
                     <ul class="module-list">
                         <li>
-                            <span class="icon">📘</span>
-                            <span>Introduction à Flutter & Dart</span>
+                            <span class="icon"><i class="fa-solid fa-book"></i> </span>
+                            <span> Introduction à Flutter & Dart</span>
                         </li>
                         <li>
-                            <span class="icon">📘</span>
-                            <span>Widgets et composants UI</span>
+                            <span class="icon"><i class="fa-solid fa-book"></i> </span>
+                            <span> Widgets et composants UI</span>
                         </li>
                         <li>
-                            <span class="icon">📘</span>
-                            <span>Layouts et responsive design</span>
+                            <span class="icon"><i class="fa-solid fa-book"></i> </span>
+                            <span> Layouts et responsive design</span>
                         </li>
                         <li>
-                            <span class="icon">📘</span>
-                            <span>Navigation entre écrans</span>
+                            <span class="icon"><i class="fa-solid fa-book"></i> </span>
+                            <span> Navigation entre écrans</span>
                         </li>
                     </ul>
 
@@ -111,27 +122,26 @@
 
                     <ul class="module-list">
                         <li>
-                            <span class="icon">📘</span>
-                            <span>Gestion d'état (Provider, Riverpod)</span>
+                            <span class="icon"><i class="fa-solid fa-book"></i> </span>
+                            <span> Gestion d'état (Provider, Riverpod)</span>
                         </li>
                         <li>
-                            <span class="icon">📘</span>
-                            <span>Appels de données locales (Sqflite, Hive)</span>
+                            <span class="icon"><i class="fa-solid fa-book"></i> </span>
+                            <span> Appels de données locales (Sqflite, Hive)</span>
                         </li>
                         <li>
-                            <span class="icon">📘</span>
-                            <span>Intégration d'API REST</span>
+                            <span class="icon"><i class="fa-solid fa-book"></i> </span>
+                            <span> Intégration d'API REST</span>
                         </li>
                         <li>
-                            <span class="icon">📘</span>
-                            <span>Authentification & sécurité</span>
+                            <span class="icon"><i class="fa-solid fa-book"></i> </span>
+                            <span> Authentification & sécurité</span>
                         </li>
                     </ul>
 
                     <button class="btn-module"><a href="https://wa.me/237697847396">En savoir plus</a></button>
                 </div>
                 <div class="module-image">
-                    <!-- Mettez votre SVG ici -->
                     <img src="/assets/img/img2.svg" alt="Module Avancé">
                 </div>
             </div>
@@ -139,7 +149,6 @@
             <!-- Module 3 -->
             <div class="module-card">
                 <div class="module-image">
-                    <!-- Mettez votre SVG ici -->
                     <img src="/assets/img/img2.svg" alt="Module E-commerce">
                 </div>
                 <div class="module-content">
@@ -149,20 +158,20 @@
 
                     <ul class="module-list">
                         <li>
-                            <span class="icon">📘</span>
-                            <span>Architecture professionnelle</span>
+                            <span class="icon"><i class="fa-solid fa-book"></i> </span>
+                            <span> Architecture professionnelle</span>
                         </li>
                         <li>
-                            <span class="icon">📘</span>
-                            <span>Panier et gestion de commandes</span>
+                            <span class="icon"><i class="fa-solid fa-book"></i> </span>
+                            <span> Panier et gestion de commandes</span>
                         </li>
                         <li>
-                            <span class="icon">📘</span>
-                            <span>Paiements en ligne</span>
+                            <span class="icon"><i class="fa-solid fa-book"></i> </span>
+                            <span> Paiements en ligne</span>
                         </li>
                         <li>
-                            <span class="icon">📘</span>
-                            <span>Déploiement Android & iOS</span>
+                            <span class="icon"><i class="fa-solid fa-book"></i></span>
+                            <span> Déploiement Android & iOS</span>
                         </li>
                     </ul>
 
@@ -287,6 +296,44 @@
         </div>
     </section>
 
+    <!-- Bouton WhatsApp flottant -->
+    <a href="https://wa.me/237697847396" class="whatsapp-float" target="_blank" aria-label="Contact WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- Script JavaScript pour le menu hamburger -->
+    <script>
+        // Gestion du menu hamburger
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.getElementById('navMenu');
+        const navLinks = document.querySelectorAll('.nav-link');
+
+        // Ouvrir/Fermer le menu au clic sur le hamburger
+        hamburger.addEventListener('click', (e) => {
+            e.stopPropagation();
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+            document.body.style.overflow = navMenu.classList.contains('active') ? 'hidden' : '';
+        });
+
+        // Fermer le menu au clic sur un lien de navigation
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                navMenu.classList.remove('active');
+                document.body.style.overflow = '';
+            });
+        });
+
+        // Fermer le menu au clic en dehors du menu
+        document.addEventListener('click', (e) => {
+            if (!navMenu.contains(e.target) && !hamburger.contains(e.target)) {
+                hamburger.classList.remove('active');
+                navMenu.classList.remove('active');
+                document.body.style.overflow = '';
+            }
+        });
+    </script>
 </body>
 
 </html>
